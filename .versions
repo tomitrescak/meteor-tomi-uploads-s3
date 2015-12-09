@@ -10,6 +10,7 @@ deps@1.0.9
 diff-sequence@1.0.1
 ecmascript@0.1.6
 ecmascript-runtime@0.2.6
+edgee:slingshot@0.7.0
 ejson@1.0.7
 html-tools@1.0.5
 htmljs@1.0.5
@@ -26,6 +27,6 @@ spacebars@1.0.7
 spacebars-compiler@1.0.7
 templating@1.1.5
 templating-tools@1.0.0
-tomi:upload-jquery@2.2.1
+tomi:upload-s3@1.0.1
 tracker@1.0.9
 underscore@1.0.4

@@ -5,7 +5,7 @@ UploadConfig = {
   },
   logLevel: 1,
   log: function(level, text) {
-    if (level >= Uploader.logLevel) {
+    if (level >= UploadConfig.logLevel) {
       console.log(text);
     }
   },

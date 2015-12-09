@@ -14,7 +14,7 @@ Template.uploader.events({
 
 Template['uploader'].helpers({
   model: function() {
-    return new Uploader(this.type, this.callbacks, this.autoStart);
+    return new Uploader(this.type, this.directive, this.callbacks, this.autoStart);
   }
 });
 
