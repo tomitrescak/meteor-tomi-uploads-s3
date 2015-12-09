@@ -1,0 +1,34 @@
+<template name="upload_buttons">
+    {{#if status "idle"}}
+      {{#unless autoStart}}
+          <div type="submit" class="{{ class 'startButton' }}">
+              <i class="{{ class 'startButtonIcon' }}"></i>
+              <span>{{ ut9n 'upload'}}</span>
+          </div>
+      {{/unless}}
+    {{/if}}
+    {{#if status "cancelled"}}
+        <div class="{{ class 'cancelledButton' }}">
+            <i class="{{ class 'cancelledButtonIcon' }}"></i>
+            <span>{{ ut9n 'cancelled'}}</span>
+        </div>
+    {{/if}}
+    {{#if status "done"}}
+            <div class="{{ class 'doneButton' }}">
+                <i class="{{ class 'doneButtonIcon' }}"></i>
+                {{ ut9n 'done'}}
+            </div>
+    {{/if}}
+    {{#if status "running"}}
+        <div class="{{ class 'cancelButton' }}">
+            <i class="{{ class 'cancelButtonIcon' }}"></i>
+            <span>{{ ut9n 'cancel'}}</span>
+        </div>
+    {{/if}}
+    {{#if status "error"}}
+        <div class="{{ class 'errorButton' }}">
+            <i class="{{ class 'errorButtonIcon' }}"></i>
+            <span>{{ ut9n 'error'}}</span>
+        </div>
+    {{/if}}
+</template>
