@@ -27,7 +27,7 @@
             <div class="{{ class 'upload' }}">
                 {{ ut9n 'browse' }}&hellip; <input type="file"
                                       class="jqUploadclass"
-                                      multiple="{{ multiple }}"
+                                      multiple={{ multiple }}
                                       data-form-data='{{ submitData }}'
                                       accept="{{ fileTypes }}">
             </div>
@@ -43,7 +43,7 @@
                       </div>
                     {{/if}}
                     <div class="progress-label">
-                        {{{ info }}}
+                        {{{ info }}}&nbsp;
                         {{#if status "running"}}
                           {{ progress }} %
                         {{/if}}

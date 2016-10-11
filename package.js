@@ -1,7 +1,7 @@
 Package.describe({
   name: 'tomi:upload-s3',
   summary: 'Client template for uploads using S3 uploads',
-  version: '1.0.1',
+  version: '1.0.2',
   git: 'https://github.com/tomitrescak/meteor-tomi-upload-s3.git'
 });
 
